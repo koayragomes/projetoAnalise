@@ -24,7 +24,6 @@
             padding: 30px 36px;
             width: 100%;
             height: 500px;
-            margin-left: 750px;
             max-width: 450px;
             box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
             margin-top: 40px;
@@ -195,67 +194,77 @@
         .cartao {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
 
         }
     </style>
 </head>
 
 <body>
+    <div class="container">
 
-    <div class="titulo">
-        <img src="assets/sitemulher.png">
-        <h1>Portal de Apoio <br> á Mulher</h1>
-    </div>
-
-    <div class="barra">
-        <a href="index.html" target="_blank">Página Inicial</a>
-        <a href="Localizacao.html" target="_blank">Localizações</a>
-        <a href="pecaAjuda.html" target="_blank">Peça Ajuda</a>
-    </div>
-
-    <div class="cartao">
-
-        <div class="card">
-            <h2>Preencha seus Dados</h2>
-
-            <div class="campo">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" placeholder="" />
-            </div>
-
-            <div class="campo">
-                <label for="contato">Contato:</label>
-                <input type="text" id="contato" placeholder="" />
-            </div>
-
-            <div class="campo">
-                <label for="cidade">Cidade:</label>
-                <select id="cidade">
-                    <option value="">Selecione</option>
-                    <option value="Marabá">Marabá</option>
-                    <option value="Belém">Belém</option>
-                    <option value="Santarém">Santarém</option>
-                    <option value="Ananindeua">Ananindeua</option>
-                    <option value="Outro">Outro</option>
-                </select>
-            </div>
-
-            <div class="campo">
-                <label for="situacao">Situação:</label>
-                <textarea id="situacao"></textarea>
-            </div>
-
-            <div class="btn-enviar">
-                <button type="button" onclick="enviar()">Enviar</button>
-            </div>
-
-            <div class="resumo" id="resumo">
-                <h2>Resumo:</h2>
-                <p id="texto-resumo"></p>
-            </div>
+        <div class="titulo">
+            <img src="assets/sitemulher.png">
+            <h1>Portal de Apoio <br> á Mulher</h1>
         </div>
-
+    
+        <div class="barra">
+            <a href="index.html">Página Inicial</a>
+            <a href="Localizacao.html">Localizações</a>
+            <a href="pecaAjuda.html">Peça Ajuda</a>
+        </div>
+    
+        <div class="cartao">
+    
+            <div class="card">
+                <h2>Preencha seus Dados</h2>
+    
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="" />
+                </div>
+    
+                <div class="campo">
+                    <label for="contato">Contato:</label>
+                    <input type="text" id="contato" placeholder="" />
+                </div>
+    
+                <div class="campo">
+                    <label for="cidade">Cidade:</label>
+                    <select id="cidade">
+                        <option value="">Selecione</option>
+                        <option value="Marabá">Marabá</option>
+                        <option value="Belém">Belém</option>
+                        <option value="Santarém">Santarém</option>
+                        <option value="Ananindeua">Ananindeua</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+    
+                <div class="campo">
+                    <label for="situacao">Situação:</label>
+                    <textarea id="situacao"></textarea>
+                </div>
+    
+                <div class="btn-enviar">
+                    <button type="button" onclick="enviar()">Enviar</button>
+                </div>
+    
+                <div class="resumo" id="resumo">
+                    <h2>Resumo:</h2>
+                    <p id="texto-resumo"></p>
+                </div>
+            </div>
+            
+        </div>
+        <footer class="rodape">
+            <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </footer>
     </div>
 
     <script>
@@ -280,14 +289,6 @@
         }
     </script>
 
-    <footer class="rodape">
-        <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
-        <ul>
-            <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">Termos de Uso</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </footer>
 
 </body>
 
